@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Montserrat:400,500,600,700,800,900&display=swap');
+/* Global styles */
+*, button {
+    font-family: "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #6c757d;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button:focus {
+    outline: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.btn {
+    border: none;
+    color: #6c757d;
+}
+
+.btn-bg {
+    color: white;
+    background: linear-gradient(to left, #23d5e3, #9149b9);
+}
+
+.btn:hover {
+    color: white;
+    background: linear-gradient(to right, #23d5e3, #9149b9);
+}
+
+.text-clipped {
+    padding: 1px;
+}
+/* End global styles */
+
+/* product quick view */
+.feature-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-img img {
+    transition: .5s ease-in-out;
+}
+
+.feature-img:hover .product-quickview-container {
+    display: block;
+}
+
+.feature-img:hover img {
+    transform: scale(1.1);
+}
+
+.product-quickview-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,.3);
+}
+.product-quickview-container .quickview-button {
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid White;
+    color: white;
+    background-color: transparent;
+}
+/* end product quick view */
+
+/* new features */
+.new-feature-banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.new-feature-banner > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.new-feature-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.feature-name {
+    font-size: 18px;
+}
+
+.feature-price {
+    font-size: 14px;
+    color: #ccc;
+}
+/* end new features */
+
+/* combo */
+.combo-container {
+    background-color: #f9f9f9;
+    padding: 100px 0;
+}
+
+.combo-tabs > input,
+.combo-tabs section > div {
+    display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2 {
+    display: block;
+    color: black;
+}
+
+.combo-tabs {
+    width: 100%;
+    margin: auto;
+}
+
+.combo-tab ul {
+    list-style: none;
+}
+
+.combo-tabs ul li label {
+    padding: 15px 20px;
+    color: #ccc;
+}
+
+#tab1:checked ~ nav ul .tab1 label,
+#tab2:checked ~ nav ul .tab2 label {
+    color: black;
+}
+
+.combo-tabs section {
+    clear: both;
+}
+
+.combo-tabs section div {
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    color: #787878;
+}
+
+.combo-tabs section div p {
+    font-size: 16px;
+}
+
+.combo-label {
+    font-size: 14px;
+    color: #787878;
+}
+
+.combo-content {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.combo-mark {
+    color: #787878;
+}
+
+.combo-button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #0EB9CB;
+}
+
+.combo-button:hover {
+    color: #0EB9CB;
+    background-color: white;
+    border: 1px solid #0EB9CB;
+}
+
+.combo-img-container {
+    width: 100%;
+    position: relative;
+}
+
+.combo-img {
+    position: absolute;
+    top: 100px;
+    left: -40px;
+}
+
+.combo-img-bg {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    box-shadow: 0 0 25px 2px rgba(0,0,0,.25);
+}
+
+.combo-img-bg span {
+    font-size: 80px;
+    font-weight: 900;
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    color: #efefef;
+    font-style: italic;
+}
+@media (max-width: 992px) {
+    .combo-img-bg {
+        width: 90%;
+        height: 450px;
+    }
+}
+@media (max-width: 768px) {
+    .combo-img-bg {
+        position: static;
+        width: 70%;
+        margin: auto;
+        height: 450px;
+    }
+
+    .combo-img {
+        top: 120px;
+        left: 10px;
+    }
+}
+/* end combo */
+
+/* hot feature */
+.hot-feature-banner {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hot-feature-content {
+    color: white;
+    width: 50%;
+}
+
+.hot-main-content {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.dropdown-divider {
+    margin-top: 30px !important;
+    position: relative;
+    overflow: unset;
+}
+
+.hot-sub-content {
+    font-size: 22px;
+    position: absolute;
+    color: white;
+    top: -18px;
+    left: 50%;
+    transform: translate(-50%, -1px);
+    background-color: black;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .hot-sub-content {
+        font-size: 18px;
+        transform: translate(-50%, 3px);
+    }
+}
+/* enđ hot feature */
+
+/* collection */
+.collection-container {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+
+.tab-button button{
+    display: block;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.more-collection {
+    color: #0EB9CB;
+}
+
+@media (max-width: 992px) {
+    .collection-content {
+        text-align: center;
+    }
+    .tab-button button {
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .more-collection {
+        float: right;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .more-collection {
+        float: left;
+        margin-top: 0;
+
+    }
+}
+/* end collection */
+
+/* maxim */
+.maxim-container {
+    background: url('../image/home-maxim-banner.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.maxim-container .container {
+    width: 50%;
+}
+
+.maxim-container .container .maxim-content {
+    font-size: 50px;
+    font-weight: 700;
+}
+.maxim-container .container p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* end maxim */
+
+/* service */
+.service-container .row .col-12 i {
+    display: block;
+    font-size: 60px;
+    color: #ccc;
+}
+
+.service-container .row .col-12 span {
+    font-size: 20px;
+    font-weight: 600;
+}
+/* end service */
