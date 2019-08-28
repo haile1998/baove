@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+</head>
+<body>
+    <!--Start header-->
+    <header>
+        <div class="custom-navbar-container d-flex align-items-center justify-content-between px-5 py-3 shadow-sm">
+            <a href="#" class="text-clipped navbar-brand">
+                <span class="m-auto">Homedecor.</span>
+            </a>
+
+            <div class="main-nav-outer d-flex">
+                <i class="fal fa-times text-clipped menu-close-icon d-lg-none"></i>
+
+                <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+                    <ul class=" navbar-nav d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Cửa hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Bộ sưu tập</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Khám phá</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="nav-icon-container d-flex justify-content-between">
+                <div class="nav-icon">
+                    <a class="text-clipped search-icon"><i class="fal fa-search"></i></a>
+                    <div class="search-box-container">
+                        <span>Search</span>
+                        <input type="text" class="search-box" placeholder="Nhập từ tìm kiếm">
+                        <div class="search-result-container">
+                            <div class="search-result"></div>
+                        </div>
+                        <i class="fal fa-times search-close"></i>
+                    </div>
+                </div>
+                <div class="nav-icon">
+                    <a class="text-clipped" href="">
+                        <i class="fal fa-shopping-bag bag-item-count"></i>
+                        <span class="badge">2</span>
+                    </a>
+                </div>
+                <div class="nav-icon">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle text-clipped" href="" data-toggle="dropdown">
+                            <i class="fal fa-user-alt"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <form action="" class="p-2 text-secondary">
+                                <div class="from-group py-1">
+                                    <input type="email" class="form-control" placeholder="Nhập email" required>
+                                </div>
+                                <div class="from-group py-1">
+                                    <input type="password" class="form-control" placeholder="Nhập mật khẩu" required>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                                    <label class="form-check-label" for="dropdown-checkbox">
+                                        Nhớ tài khoản này
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-bg my-2">Đăng nhập</button>
+                            </form>
+                            <div class="dropdown-divider mt-0"></div>
+                            <a href="#" class="dropdown-item">
+                                Bạn chưa có tài khoản? Đăng kí ngay
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                Quên mật khẩu?
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-icon d-lg-none">
+                    <i class="fal fa-bars open-menu-icon text-clipped"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- promotion -->
+        <div class="promotion text-white text-center py-2 mb-5">
+            <span>
+                <span class="text-uppercase font-weight-bold">Miễn phí vận chuyển</span> cho đơn hàng trên 10 triệu
+            </span>
+        </div>
+        <!-- end promotion -->
+
+        <!-- start carousel -->
+        <div class="container-fluid">
+            <div class="carousel slide" id="carousel-indicators" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carousel-indicators" data-slide-to="0"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="1"></li>
+                    <li data-target="#carousel-indicators" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <img class="img-fluid" src="image/home-banner.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid" src="image/home-banner.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img class="img-fluid" src="image/home-banner.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <a href="#carousel-indicators" class="carousel-control-prev" role="button" data-slide="prev">
+                    <i class="fal fa-chevron-right"></i>
+                </a>
+                <a href="#carousel-indicators" class="carousel-control-next" role="button" data-slide="next">
+                    <i class="fal fa-chevron-left text-clipped"></i>
+                </a>
+            </div>
+        </div>
+        <!-- end carousel -->
+    </header>
+    <!--End header-->
+
+    <!-- brand -->
+    <section class="featured-brands mt-5">
+        <!-- new feature -->
+        <div class="container mb-5">
+            <div class="section-heading text-center mb-4">
+                <h1 class="text-clipped">Sản phẩm mới</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 mt-4">
+                    <div class="new-feature-banner">
+                        <img class="img-fluid" src="image/home-new-banner.jpg" alt="">
+                        <span class="new-feature-content">Những thiết kế riêng mới nhất dành cho bạn.</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end new feature -->
+
+        <!-- combo -->
+        <div class="combo-container mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="combo-img-container">
+                            <div class="combo-img-bg">
+                                <span>HOT</span>
+                            </div>
+                            <img class="combo-img img-fluid" src="image/combo-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center mt-5">
+                        <span class="combo-label">Set 3 món</span>
+                        <h3 class="combo-content">Best Price 149 Cats On Grey</h3>
+                        <div class="combo-tabs text-center">
+                            <input type="radio" checked="checked" id="tab1" name="cbt">
+                            <input type="radio" id="tab2" name="cbt">
+                            <nav>
+                                <ul class="d-flex justify-content-center">
+                                    <li class="tab1"><label for="tab1">Thông tin</label></li>
+                                    <li class="tab2"><label for="tab2">Chi tiết</label></li>
+                                </ul>
+                            </nav>
+                            <span class="text-uppercase combo-mark">Phối cùng ga bọc nào thì đẹp?</span>
+                            <div class="dropdown-divider mt-2"></div>
+                            <section>
+                                <div class="tab1">
+                                    <p class="lead">Với chất liệu thoáng mát 100% sợi cotton 200 thread count, BP149 với họa tiết chủ đạo là chú mèo tinh nghịch bên cạnh những đồ vật đáng yêu như bánh donut, củ cà rốt,... sẽ khiến chiếc giường của bạn thật sinh động.</p>
+                                </div>
+                                <div class="tab2">
+                                    <p class="lead">Chất liệu: 100% cotton 200 thread. Thiết kế 2 mặt vải.</p>
+                                    <p class="lead">Đóng gói: 2 vỏ áo nằm 50x70cm và 1 vỏ mền 200x220cm khổ vải lớn không đường nổ.i</p>
+                                </div>
+                            </section>
+                        </div>
+                        <button class="combo-button">Đừng bỏ lỡ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end combo -->
+         <!-- new feature -->
+         <div class="container mt-5">
+            <div class="section-heading text-center mb-4">
+                <h1 class="text-clipped">Sản phẩm bán chạy</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 mt-4">
+                    <div class="hot-feature-banner">
+                        <span class="hot-feature-content text-center">
+                            <span class="text-uppercase hot-main-content">Best seller</span>
+                            <div class="dropdown-divider">
+                                <span class="hot-sub-content">Mua ngay</span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
+                        <div class="product-quickview-container">
+                            <button class="quickview-button">Xem nhanh</button>
+                        </div>
+                    </div>
+                    <div class="feature-content mt-3">
+                        <h3 class="feature-name">Sofa băng MULAN</h3>
+                        <span class="feature-price">VNĐ 14,000,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end new feature -->
+
+        <!-- collection -->
+        <div class="collection-container mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <h1 class="text-clipped collection-content">Bộ sưu tập</h1>
+                        <div class="dropdown-divider"></div>
+                        <div class="tab-button">
+                            <button onclick="showPanel(0)">Huges collection</button>
+                            <button onclick="showPanel(1)">Eliot collection</button>
+                            <button onclick="showPanel(2)">Stowe collection</button>
+                            <div class="more-collection">
+                                <a href="#">Xem thêm</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-8">
+                        <div class="collection-panel">
+                            <img class="img-fluid" src="image/home-collection-1.jpg" alt="">
+                        </div>
+                        <div class="collection-panel">
+                            <img class="img-fluid" src="image/home-collection-2.jpg" alt="">
+                        </div>
+                        <div class="collection-panel">
+                            <img class="img-fluid" src="image/home-collection-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end collection -->
+
+        <!-- maxim -->
+        <div class="maxim-container">
+            <div class="container text-center text-white">
+                <h1 class="text-clipped maxim-content">Homedecor.</h1>
+                <div class="dropdown-divider"></div>
+                <p class="lead">Với những sản phẩm chất lượng trong tầm giá, chúng tôi mong muốn trở thành
+                    người bạn thân của những tâm hồn yêu thích việc trang trí nhà cửa, bắt đầu
+                    từ chiếc giường nhỏ thân thuộc nơi chúng ta nghỉ ngơi mỗi ngày
+                </p>
+            </div>
+        </div>
+        <!-- end maxim -->
+
+        <!-- service -->
+        <div class="service-container container my-5">
+            <div class="row">
+                <div class="col-12 col-md-4 text-center">
+                    <i class="fal fa-box mb-4"></i>
+                    <span>Chính sách đổi trả</span>
+                    <p>Miễn phí đổi - trả trong 7 ngày</p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <i class="fal fa-shipping-fast mb-4"></i>
+                    <span>Giao hàng nhanh chóng</span>
+                    <p>Vận chuyển toàn quốc từ 1-2 ngày</p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <i class="fal fa-comment-dots mb-4"></i>
+                    <span>Chăm sóc khách hàng</span>
+                    <p>Dịch vụ chăm sóc khách hàng chất lượng quốc tế</p>
+                </div>
+            </div>
+        </div>
+        <!-- end service -->
+    </section>
+    <!-- end brand -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-wrapper"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <address>
+                            <strong class="h3">Homedecor.</strong><br>
+                            <span>Công ty TNHH Homedecor. <br></span>
+                            <p>Giấy phép đăng ký kinh doanh số 0315665696 do Sở Kế 
+                                hoạch & Đầu tư Tp. Hà Nội cấp ngày 27/08/2019.</p>
+                            <p><i class="fas fa-home"></i> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội.</p>
+                            <p><i class="fas fa-phone"></i> 0961 771 047</p>
+                            <p><i class="fas fa-envelope"></i> supergundam06@gmail.com</p>
+                            <img class="img-fluid" src="image/dathongbao.png" alt="">
+                        </address>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <strong class="h3">Hướng dẫn</strong>
+                        <ul >
+                            <li><a class="footer-nav-link" href="">Hướng dẫn mua hàng</a></li>
+                            <li><a class="footer-nav-link" href="">Chính sách Vận chuyển & Thanh toán</a></li>
+                            <li><a class="footer-nav-link" href="">Chính sách Bảo hành & Đổi trả</a></li>
+                            <li><a class="footer-nav-link" href="">Chính sách bảo mật</a></li>
+                            <li><a class="footer-nav-link" href="">Về Homedecor.</a></li>
+                            <li><a class="footer-nav-link" href="">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <strong class="h3">Liên hệ với chúng tôi</strong>
+                        <p>Nhận ngay những ưu đãi đặc biệt khi trở thành thành viên.</p>
+                        <input type="text" placeholder="Địa chỉ email của bạn" class="footer-input">
+                        <button class="footer-button">Gửi</button>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- end footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
