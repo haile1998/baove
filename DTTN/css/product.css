@@ -1,0 +1,171 @@
+body {
+    background: #fafafa;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.custom-color {
+    width: 1px;
+    height: 90%;
+    align-self: center;
+    border-left: 1px solid #0EB9CB;
+}
+
+.sorting-button:hover .custom-color,
+.sorting-button:focus .custom-color {
+    border-left: 1px solid white;
+}
+
+.product-page-content {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.dropdown-divider {
+    border-bottom: 1px solid #ccc !important;
+}
+
+.product-container {
+    /* width: 70%; */
+    background: white;
+    box-shadow: 0px 0px 9px 0px rgba(173,173,173,0.3);
+}
+
+.product-name {
+    font-size: 20px;
+}
+
+.product-price {
+    font-size: 14px;
+}
+
+.sorting-button {
+    padding: 5px 20px;
+    background: transparent;
+    border: 1px solid #0EB9CB;
+    color: #0EB9CB;
+}
+
+.sorting-button i {
+    transition: 1s all;
+}
+
+.sorting-button:focus i {
+    transform: rotate(180deg);
+}
+
+.sorting-button:hover, .sorting-button:active, .sorting-button:focus {
+    background: #0EB9CB;
+    color: white;
+    border: 1px solid #0EB9CB;
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.dropdown-menu a.active,
+.dropdown-menu a:hover,
+.pagination li.active {
+    background: #0EB9CB;
+    color: white;
+}
+
+.fast-look {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    background: rgba(0,0,0,0.3);
+    border: none;
+    padding: 10px 30px;
+    color: #0EB9CB;
+}
+.fast-look:hover {
+    background: #0EB9CB;
+    color: white;
+}
+
+.product-container:hover .fast-look {
+    display: block;
+}
+
+/* modal */
+.modal-body {
+    padding: 0;
+}
+
+.modal-dialog {
+    max-width: 70% !important;
+    height: 99vh;
+    padding-bottom: 30px;
+    overflow-x: unset !important;
+}
+
+.modal-content {
+    height: 100% !important;
+}
+
+.header-modal-name {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.add-to-cart {
+    padding: 10px 30px;
+    color: #0EB9CB;
+    border: 1px solid #0eb9cb;
+    background: transparent;
+}
+.add-to-cart:hover {
+    background: #0eb9cb;
+    color: white;
+}
+
+.modal-a-detail, .modal-a-detail:hover, .modal-a-detail:active {
+    font-size: 16px;
+    color: #0eb9cb;
+}
+
+.carousel-indicators {
+    bottom: -15px;
+    background: white;
+    box-shadow: 0px 0px 9px 0px rgba(173,173,173,0.3);
+    width: fit-content;
+    margin: auto;
+}
+
+.carousel-indicators li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-indent: 0;
+    margin: 0 10px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.carousel-indicators li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.h-divider {
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid #ccc;
+}
+
+.modal-selection {
+    height: fit-content;
+}
+/* end modal */

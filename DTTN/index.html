@@ -14,86 +14,96 @@
 <body>
     <!--Start header-->
     <header>
-        <div class="custom-navbar-container d-flex align-items-center justify-content-between px-5 py-3 shadow-sm">
-            <a href="#" class="text-clipped navbar-brand">
-                <span class="m-auto">Homedecor.</span>
-            </a>
-
-            <div class="main-nav-outer d-flex">
-                <i class="fal fa-times text-clipped menu-close-icon d-lg-none"></i>
-
-                <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
-                    <ul class=" navbar-nav d-flex">
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Cửa hàng</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Bộ sưu tập</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Khám phá</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="nav-icon-container d-flex justify-content-between">
-                <div class="nav-icon">
-                    <a class="text-clipped search-icon"><i class="fal fa-search"></i></a>
-                    <div class="search-box-container">
-                        <span>Search</span>
-                        <input type="text" class="search-box" placeholder="Nhập từ tìm kiếm">
-                        <div class="search-result-container">
-                            <div class="search-result"></div>
-                        </div>
-                        <i class="fal fa-times search-close"></i>
-                    </div>
-                </div>
-                <div class="nav-icon">
-                    <a class="text-clipped" href="">
-                        <i class="fal fa-shopping-bag bag-item-count"></i>
-                        <span class="badge">2</span>
+            <div class="custom-navbar-container d-flex align-items-center justify-content-between px-5 py-3 shadow-sm">
+                    <a href="#" class="text-clipped navbar-brand">
+                        <span class="m-auto">Homedecor.</span>
                     </a>
-                </div>
-                <div class="nav-icon">
-                    <div class="dropdown">
-                        <a class="dropdown-toggle text-clipped" href="" data-toggle="dropdown">
-                            <i class="fal fa-user-alt"></i>
-                        </a>
-                        <div class="dropdown-menu">
-                            <form action="" class="p-2 text-secondary">
-                                <div class="from-group py-1">
-                                    <input type="email" class="form-control" placeholder="Nhập email" required>
+        
+                    <div class="main-nav-outer d-flex">
+                        <i class="fal fa-times text-clipped menu-close-icon d-lg-none"></i>
+        
+                        <nav class="main-nav navbar navbar-light navbar-expand-lg text-center m-auto">
+                            <ul class=" navbar-nav d-flex">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link active-x">Trang chủ</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cửa hàng</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="product.html">Bộ sưu tập</a>
+                                            <a class="dropdown-item" href="product.html">Bàn</a>
+                                            <a class="dropdown-item" href="product.html">Sofa</a>
+                                            <a class="dropdown-item" href="product.html">Ghế</a>
+                                            <a class="dropdown-item" href="product.html">Kệ</a>
+                                            <a class="dropdown-item" href="product.html">Tủ</a>
+                                            <a class="dropdown-item" href="product.html">Giường</a>
+                                        </div>
+                                        </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Bộ sưu tập</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Khám phá</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <div class="nav-icon-container d-flex justify-content-between">
+                        <div class="nav-icon">
+                            <a class="text-clipped search-icon"><i class="fal fa-search"></i></a>
+                            <!-- <div class="search-box-container">
+                                <span>Search</span>
+                                <input type="text" class="search-box" placeholder="Nhập từ tìm kiếm">
+                                <div class="search-result-container">
+                                    <div class="search-result"></div>
                                 </div>
-                                <div class="from-group py-1">
-                                    <input type="password" class="form-control" placeholder="Nhập mật khẩu" required>
-                                </div>
-                                <div class="form-check">
-                                    <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
-                                    <label class="form-check-label" for="dropdown-checkbox">
-                                        Nhớ tài khoản này
-                                    </label>
-                                </div>
-                                <button type="submit" class="btn btn-bg my-2">Đăng nhập</button>
-                            </form>
-                            <div class="dropdown-divider mt-0"></div>
-                            <a href="#" class="dropdown-item">
-                                Bạn chưa có tài khoản? Đăng kí ngay
+                                <i class="fal fa-times search-close"></i>
+                            </div> -->
+                        </div>
+                        <div class="nav-icon">
+                            <a class="text-clipped" href="cart.html">
+                                <i class="fal fa-shopping-bag bag-item-count"></i>
+                                <span class="badge">2</span>
                             </a>
-                            <a href="#" class="dropdown-item">
-                                Quên mật khẩu?
-                            </a>
+                        </div>
+                        <div class="nav-icon">
+                            <div class="dropdown">
+                                <a class="dropdown-toggle text-clipped" href="" data-toggle="dropdown">
+                                    <i class="fal fa-user-alt"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <form action="" class="p-2 text-secondary">
+                                        <div class="from-group py-1">
+                                            <input type="email" class="form-control" placeholder="Nhập email" required>
+                                        </div>
+                                        <div class="from-group py-1">
+                                            <input type="password" class="form-control" placeholder="Nhập mật khẩu" required>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="dropdown-checkbox">
+                                            <label class="form-check-label" for="dropdown-checkbox">
+                                                Nhớ tài khoản này
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-bg my-2">Đăng nhập</button>
+                                    </form>
+                                    <div class="dropdown-divider mt-0"></div>
+                                    <a href="#" class="dropdown-item">
+                                        Bạn chưa có tài khoản? Đăng kí ngay
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Quên mật khẩu?
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-icon d-lg-none">
+                            <i class="fal fa-bars open-menu-icon text-clipped"></i>
                         </div>
                     </div>
                 </div>
-                <div class="nav-icon d-lg-none">
-                    <i class="fal fa-bars open-menu-icon text-clipped"></i>
-                </div>
-            </div>
-        </div>
 
         <!-- promotion -->
         <div class="promotion text-white text-center py-2 mb-5">
@@ -159,7 +169,8 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <a href="#" class="quickview-button">Xem chi tiết</a>
+                            <button class="add-to-cart">Thêm vào giỏ</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -171,7 +182,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -183,7 +194,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -195,7 +206,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -207,7 +218,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -219,7 +230,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -293,7 +304,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -305,7 +316,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -317,7 +328,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -329,7 +340,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -341,7 +352,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">
@@ -353,7 +364,7 @@
                     <div class="feature-img">
                         <img class="img-fluid" src="image/home-new-feature-1.jpg" alt="">
                         <div class="product-quickview-container">
-                            <button class="quickview-button">Xem nhanh</button>
+                            <button class="quickview-button">Xem chi tiết</button>
                         </div>
                     </div>
                     <div class="feature-content mt-3">

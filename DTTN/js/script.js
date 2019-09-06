@@ -16,10 +16,3 @@ function showPanel(panelIndex) {
 }
 
 showPanel(0);
-
-$('.search-icon').on('click',function (){
-    $('.search-box-container').addClass('search-open');
-});
-$('.search-close').click(function() {
-    $('.search-box-container').removeClass('search-open');
-});

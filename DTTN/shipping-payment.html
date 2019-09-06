@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h1 class="my-5"><a href="index.html">Homedecor</a></h1>
+                    <h4 class="font-weight-light mt-5">Vận chuyển và thanh toán</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <form class="payment-form">
+                        <div class="form-group mb-5">
+                            <h4 class="mb-4">Thông tin của bạn</h4>
+                            <input type="email" class="form-control mb-4" placeholder="Nhập email của bạn" required>
+                            <small class="form-text text-muted">Bạn đã có tài khoản? <a href="#" class="login-now">Đăng nhập ngay</a></small>
+                        </div>
+                        <div class="form-group">
+                            <h4 class="mb-4">Thông tin vận chuyển</h4>
+                            <input type="text" class="form-control mb-4" placeholder="Họ và tên" required>
+                            <input type="text" class="form-control mb-4" placeholder="Số điện thoại" required>
+                            <input type="text" class="form-control mb-4" placeholder="Địa chỉ" required>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col">
+                                <select name="" id="staticEmail2" class="form-control">
+                                    <option>Thành phố</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select name="" id="staticEmail2" class="form-control">
+                                    <option>Thành phố</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select name="" id="staticEmail2" class="form-control">
+                                    <option>Thành phố</option>
+                                </select>
+                            </div>
+                        </div>
+                        <fieldset class="form-group mt-5">
+                            <h4 class="mb-4">Hình thức giao hàng</h4>
+                            <div class="form-check-1 radius-t d-flex justify-content-between">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1">Tôi sẽ nhận tại cửa hàng</label>
+                                </div>
+                                <p>VNĐ 0</p>
+                            </div>
+                            <div class="form-check-1 d-flex justify-content-between">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2">Giao hàng trong nội thành Hà Nội</label>
+                                </div>
+                                <p>VNĐ 0</p>
+                            </div>
+                            <div class="form-check-1 radius-b border-b d-flex justify-content-between">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Giao hàng toàn quốc</label>
+                                </div>
+                                <p>VNĐ 0</p>
+                            </div>
+                            <h4 class="mt-5 mb-4">Hình thức thanh toán</h4>
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" checked>
+                                            <label class="custom-control-label" for="customRadio4">Thanh toán khi nhận hàng (COD - áp dụng tại khu vực nội thành Hà Nội)</label>
+                                        </div>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                                Chỉ áp dụng khu vực Nội thành HCM (cách kho hàng &lsaquo; 20km) do Make My Home trực tiếp giao hàng và lắp đặt. Make My Home sẽ quyết định cuối cùng về hình thức giao hàng và COD cho khách hàng.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <label class="custom-control-label" for="customRadio5">Thanh toán chuyển khoản</label>
+                                        </div>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body text-center">
+                                            <p>BIDV Lê Thanh Hải</p>
+                                            <p>09318031238 chi nhánh Hà Nội</p>
+                                            <p>Vui lòng ghi rõ họ tên và số điện thoại</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="container main-cart-container py-4 px-4 text-center">
+                        <h3 class="mb-4 cart-main-content">Tóm tắt đơn hàng của bạn</h3>
+                        <div class="dropdown-divider"></div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <div class="total-text text-left">
+                                <p>Tổng phụ</p>
+                                <p>Phí vận chuyển</p>
+                                <p>Giảm giá</p>
+                                <p>Thuế</p>
+                            </div>
+                            <div class="total-price text-right">
+                                <p class="price">VNĐ 30,000,000</p>
+                                <p class="price">VNĐ 0</p>
+                                <p class="price">VNĐ 0</p>
+                                <p class="price">VNĐ 0</p>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider mb-3"></div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <p>Tổng tiền</p>
+                            <p class="price">VNĐ 30,000,000</p>
+                        </div>
+                        <div class="dropdown-divider mb-4"></div>
+                        <p>Phiếu giảm giá</p>
+                        <div class="input-group mb-4">
+                            <input type="text" class="form-control" placeholder="Nhập mã giảm giá" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Apply</button>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider mb-4"></div>
+                        <i class="fal fa-box mb-4"></i>
+                        <p>Ngồi lên chúng, thư giãn trên chúng, - nếu bạn không thích sản phẩm của chúng tôi, chúng tôi sẽ hoàn lại tiền cho bạn và nhận lại nó.</p>
+                        <p><b>Không áp dụng cho phụ kiện</b>.</p>
+                    </div>
+                    <div class="row d-flex justify-content-center mt-5">
+                        <a href="" class="btn btn-lg btn-outline-secondary">Hoàn tất thanh toán</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer mt-5">
+        <div class="footer-wrapper"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <address>
+                            <strong class="h3">Homedecor.</strong><br>
+                            <span>Công ty TNHH Homedecor. <br></span>
+                            <p>Giấy phép đăng ký kinh doanh số 0315665696 do Sở Kế 
+                                hoạch & Đầu tư Tp. Hà Nội cấp ngày 27/08/2019.</p>
+                            <p><i class="fas fa-home"></i> Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội.</p>
+                            <p><i class="fas fa-phone"></i> 0961 771 047</p>
+                            <p><i class="fas fa-envelope"></i> supergundam06@gmail.com</p>
+                            <img class="img-fluid" src="image/dathongbao.png" alt="">
+                        </address>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <strong class="h3">Hướng dẫn</strong>
+                        <ul >
+                            <li><a class="footer-nav-link" href="">Hướng dẫn mua hàng</a></li>
+                            <li><a class="footer-nav-link" href="">Chính sách Vận chuyển & Thanh toán</a></li>
+                            <li><a class="footer-nav-link" href="">Chính sách Bảo hành & Đổi trả</a></li>
+                            <li><a class="footer-nav-link" href="">Chính sách bảo mật</a></li>
+                            <li><a class="footer-nav-link" href="">Về Homedecor.</a></li>
+                            <li><a class="footer-nav-link" href="">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <strong class="h3">Liên hệ với chúng tôi</strong>
+                        <p>Nhận ngay những ưu đãi đặc biệt khi trở thành thành viên.</p>
+                        <input type="text" placeholder="Địa chỉ email của bạn" class="footer-input">
+                        <button class="footer-button">Gửi</button>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

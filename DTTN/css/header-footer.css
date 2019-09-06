@@ -66,6 +66,10 @@ button:focus {
     text-transform: uppercase;
 }
 
+.active-x {
+    color: black !important;
+}
+
 .nav-icon-container {
     width: 100%;
     max-width: 125px;
@@ -153,44 +157,58 @@ button:focus {
     border-bottom-left-radius: 100%;
 }
 
-.search-box-container {
-    width: 100%;
+/* .search-box-container {
+    position: relative;
+    width: 100px;
+    height: 40px;
+}
+
+.search-box {
     position: absolute;
-    left: 0;
-    top: 86px;
-    border-bottom: 3px solid #ccc;
-    padding: 30px 50px;
-    background-color: white;
-    z-index: 10;
-    display: flex;
-    opacity: 0;
-    transition:.1s ease-in-out;
-}
-
-.search-open {
-    opacity: 1;
-}
-
-.search-box-container span {
-    font-size: 22px;
-}
-
-.search-box-container input {
-    width: 100%;
-    margin-left: 20px;
-    padding:5px 30px;
-    border: none;
-    border-left: 1px solid #ccc;
-}
-
-.search-box-container input:focus {
+    width: 0px;
+    height: 100%;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    padding: 0 20px;
     outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 1px solid #0ec9cb;
+    color: #29313a;
+    transition: all 0.8s ease;
 }
 
-.search-box-container i {
-    align-self: center;
+.search-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    right: 0px;
+    top: 0px;
     cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ccc;
+    transition: all 0.8s ease;
 }
+
+.search-btn:hover {
+    color: black;
+}
+
+.search-box .active {
+    width: 100px;
+}
+
+.search-btn .animate {
+    transform: rotate(-360deg);
+    background: #0eb9cb;
+    color: white; */
+
+
 
 @media (min-width: 992px) {
     .main-nav-outer {
@@ -207,6 +225,15 @@ button:focus {
 
     .nav-icon .dropdown-menu::before {
         right: 58px;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-box-container {
+        top: 65px;
+    }
+    .search-box-container span {
+        font-size: 20px;
     }
 }
 /* end header */
@@ -259,6 +286,14 @@ button:focus {
     background-color: transparent;
     padding: 10px 15px;
     border-bottom: 1px solid white;
+}
+
+.footer .container .row .col-12 input {
+    color: white;
+}
+
+.footer .container .row .col-12 input:focus {
+    outline: none;
 }
 
 .footer .container .row .col-12 input::placeholder {
